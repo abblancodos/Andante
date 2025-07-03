@@ -1,33 +1,50 @@
+# Dependency directories
+node_modules/
+dist/
+src-tauri/target/  # Tauri build artifacts
+
 # Logs
-logs
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
-
-node_modules
-.DS_Store
-dist
-dist-ssr
-coverage
-*.local
-
-/cypress/videos/
-/cypress/screenshots/
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+.idea/
+.vscode/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-*.tsbuildinfo
+# Environment files
+.env
+.env.local
+.env.*.local
 
-test-results/
-playwright-report/
+# Tauri specific
+/src-tauri/bin/
+/src-tauri/Cargo.lock
+
+# Test artifacts
+/coverage/
+/e2e/test-results/
+/e2e/playwright-report/
+/e2e/playwright/.cache/
+
+# Vite/Vitest cache
+.cache/
+.temp/
+.history/
+
+# Tauri build artifacts
+src-tauri/target/
+
+# Cache directories
+.cache/
+~/.cache/tauri/
+
+# System Files
+.DS_Store
+Thumbs.db
